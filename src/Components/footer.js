@@ -55,7 +55,7 @@ export default function Footer(){
 
                 </Row>
                 <div className='text-center py-3'>
-            <span>made with 🤎 by Akbar Badmus</span> <br/>
+            <span>Made with 🤎 by Akbar Badmus</span> <br/>
             akbarbadmus ™️ 2022.
         </div>
             </footer>

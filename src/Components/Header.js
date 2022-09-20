@@ -5,7 +5,7 @@ import NavbarToggle from "react-bootstrap/esm/NavbarToggle";
 export default function Header(){
     
     return(
-        <Navbar bg='brand' expand="lg" className="shadow-sm">
+        <Navbar bg='brand' expand="md" className="shadow-sm">
             <Container>
                 <NavbarBrand>
 

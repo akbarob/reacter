@@ -11,7 +11,7 @@ export default function Section4(){
                     </article>
                 </Col>
                 <Col>
-                    <a>See More...</a>
+                    <a  className=''>See More...</a>
                 </Col>
             </Row>
             <Courses/>
