@@ -1,14 +1,15 @@
 import { Navbar, NavbarBrand,Nav,NavItem, Container, Button, Row, Col } from "react-bootstrap";
 import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
 import NavbarToggle from "react-bootstrap/esm/NavbarToggle";
+import {BiShareAlt} from 'react-icons/bi'
 
 export default function Header(){
     
     return(
-        <Navbar bg='brand' expand="md" className="shadow-sm">
+        <Navbar bg='brand' expand="md" className="shadow-sm" sticky="top" className='brandname'>
             <Container>
                 <NavbarBrand>
-
+                    <h3><strong> <BiShareAlt/>Reacter</strong></h3>
                 </NavbarBrand>
 
                 <NavbarToggle/>
@@ -50,6 +51,7 @@ export default function Header(){
                     </Nav>
                 </NavbarCollapse>
             </Container>
+            
         </Navbar>
     )
 }

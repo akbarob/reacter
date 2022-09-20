@@ -1,5 +1,7 @@
 import { Col, Form, FormGroup, Row , Button} from "react-bootstrap"
 import {BsFacebook,BsLinkedin,BsTwitter} from 'react-icons/bs'
+import {BiShareAlt} from 'react-icons/bi'
+
 
 export default function Footer(){
     return(
@@ -9,8 +11,8 @@ export default function Footer(){
                 <Mail/>
                 <hr/>
                 <Row>
-                    <Col xs={3}>
-                        <img></img>
+                    <Col xs={12} md={3} className='text-center pb-3'>
+                    <h3><strong> <BiShareAlt/>Reacter</strong></h3>
                         <p>Solution for easy and flexible online learning, you can studt anywhere at your <span className="text-danger">convenience</span></p>
                         <Button variant="outline-primary" className="mx-1"><BsFacebook /> </Button>
                         <Button variant="outline-primary" className=""><BsLinkedin /></Button>
@@ -38,7 +40,7 @@ export default function Footer(){
                             <li>Learning</li>
                             <li>Certification</li>
                             <li>Partners</li>
-                            <li>watch Videosks</li>
+                            <li>Watch Videos</li>
                         </ul>
                         </Col>
                         <Col>

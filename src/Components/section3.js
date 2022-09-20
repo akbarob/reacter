@@ -8,8 +8,8 @@ export default function Section3(){
                 <Col md={6} className="mx-auto  d-flex justify-content-center align-items-center  mx-auto">
                 <img src="landing 3.png" className="img-fluid align-self-center" />
                 </Col>
-                <Col md={6}>
-                    <article className="mb-5">
+                <Col md={6} >
+                    <article className="my-5">
                         <h3>
                         <span className="text-warning">Specify </span>the time and day of One-on-one Classes                
 

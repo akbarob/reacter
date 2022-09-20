@@ -10,3 +10,8 @@
 body{
 font-family: 'Old Standard TT', serif !important;
 }
+.brandname{
+  font-family: 'Fira Sans', sans-serif !important;
+  font-variant: small-caps;
+  font-weight: bolder;
+}
