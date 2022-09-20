@@ -6,7 +6,7 @@ import {BiShareAlt} from 'react-icons/bi'
 export default function Header(){
     
     return(
-        <Navbar bg='brand' expand="md" className="shadow-sm" sticky="top" className='brandname'>
+        <Navbar bg='brand' expand="md" sticky="top" className='brandname shadow-sm'>
             <Container>
                 <NavbarBrand>
                     <h3><strong> <BiShareAlt/>Reacter</strong></h3>

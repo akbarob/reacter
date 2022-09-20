@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import {Row, Col, Card, Button} from 'react-bootstrap'
 export default function Section4(){
     return(
@@ -20,12 +21,15 @@ export default function Section4(){
         </div>
     )
 }
-
 function Courses(){
     const card = Info.map(item =>{
         console.log(item.name)
         return(
-            <Card key={item.id} bg={item.bg} className="col-8 mx-auto my-3 text-light shadow-sm border-2 border">
+            <motion.div className='col-8 mx-auto'
+            initial={{ opacity: 0,  x:'-50%' }}
+            whileInView={{ opacity: 1, x:0,transition:{duration:0.5} }}
+            >
+                <Card key={item.id} bg={item.bg} className=" my-3 text-light shadow-sm border-2 border">
                 <Card.Img src={item.img}/>
                 <Card.Body>
 
@@ -38,6 +42,9 @@ function Courses(){
                 </Card.Body>
                 
             </Card>
+
+            </motion.div>
+            
         )
      })
      return(

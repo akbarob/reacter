@@ -15,3 +15,12 @@ font-family: 'Old Standard TT', serif !important;
   font-variant: small-caps;
   font-weight: bolder;
 }
+.progress-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: red;
+  transform-origin: 0%;
+}

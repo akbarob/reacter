@@ -1,5 +1,5 @@
+import { motion } from "framer-motion";
 import { Row , Col, Button, Card} from "react-bootstrap";
-
  const Info =[
     {
         id:0,
@@ -29,16 +29,34 @@ import { Row , Col, Button, Card} from "react-bootstrap";
 ]
 
 function D (){
+    const item = {
+        hidden: { opacity: 0 },
+        show: { opacity: 1 }
+      }
+
+      const boxVariant = {
+        visible: { opacity: 1, x:0,  transition:{duration:0.8} },
+        hidden: { opacity: 0,  x:'-100%' },
+    }
  const card = Info.map(item =>{
     console.log(item.name)
     return(
-        <Card key={item.id} bg={item.bg} className="col-5 col-lg-3 mx-auto my-3 text-light shadow-sm border-2 border">
+        <motion.div
+        variants={boxVariant}
+            initial="hidden"
+            whileInView='visible' 
+            className="col-12 col-md-5 col-lg-3 mx-auto ">
+                <Card key={item.id} bg={item.bg} className="my-3 text-light shadow-sm border-2 border"
+        >
             <Card.Body>
                 <h5>{item.title}</h5>
             <p>{item.text}</p>                
             <Button variant="outline-dark"> Read More</Button>
             </Card.Body>
         </Card>
+
+        </motion.div>
+        
     )
  })
  return(
